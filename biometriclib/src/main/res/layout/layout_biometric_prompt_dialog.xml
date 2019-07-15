@@ -5,16 +5,19 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="280dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:background="@android:color/white"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
             android:layout_marginTop="20dp"
             android:text="@string/biometric_dialog_title"
             android:textColor="@android:color/black"
@@ -24,19 +27,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
             android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
             android:text="@string/biometric_dialog_subtitle"
             android:textColor="#75000000"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
             android:layout_marginTop="24dp"
-            android:orientation="horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="54dp"
@@ -48,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
                 android:text="@string/biometric_dialog_state_normal"
                 android:textColor="#CDCED0"
                 android:textSize="16dp"
@@ -57,11 +60,11 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="52dp"
-            android:layout_gravity="right"
-            android:layout_marginRight="24dp"
-            android:layout_marginTop="30dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/use_password_btn"
@@ -76,7 +79,6 @@
                 android:id="@+id/cancel_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="14dp"
                 android:gravity="center"
                 android:text="@string/biometric_dialog_cancel"
                 android:textColor="#419BF9"

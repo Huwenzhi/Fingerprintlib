@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public void onError(int code, String reason) {
 
-                    Toast.makeText(MainActivity.this, "onError", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "onError"+reason, Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

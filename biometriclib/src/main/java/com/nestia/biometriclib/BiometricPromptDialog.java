@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -67,7 +68,7 @@ public class BiometricPromptDialog extends DialogFragment {
         mUsePasswordBtn = view.findViewById(R.id.use_password_btn);
         mCancelBtn = view.findViewById(R.id.cancel_btn);
 
-        mUsePasswordBtn.setVisibility(View.VISIBLE);
+        mUsePasswordBtn.setVisibility(View.GONE);
         mUsePasswordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -149,6 +150,7 @@ public class BiometricPromptDialog extends DialogFragment {
                 mStateTv.setTextColor(ContextCompat.getColor(mActivity, R.color.text_red));
                 mStateTv.setText(mActivity.getString(R.string.biometric_dialog_state_error));
                 mCancelBtn.setVisibility(View.GONE);
+                mUsePasswordBtn.setVisibility(View.VISIBLE);
                 break;
             case STATE_SUCCEED:
                 mStateTv.setTextColor(ContextCompat.getColor(mActivity, R.color.text_green));

@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">BiometricLib</string>
     <string name="biometric_dialog_cancel">取消</string>
-    <string name="biometric_dialog_title">确认</string>
+    <string name="biometric_dialog_title">请验证指纹</string>
     <string name="biometric_dialog_subtitle">验证已有指纹继续</string>
-    <string name="biometric_dialog_state_normal">指纹传感器</string>
+    <string name="biometric_dialog_state_normal">请将手指放于传感器上</string>
     <string name="biometric_dialog_state_failed">未能识别，请重试</string>
-    <string name="biometric_dialog_state_error">验证错误，请输入支付密码</string>
+    <string name="biometric_dialog_state_error">验证错误，请输入密码</string>
     <string name="biometric_dialog_state_error_enable_process">验证错误，安装失败</string>
     <string name="biometric_dialog_state_succeeded">验证成功</string>
     <string name="biometric_dialog_use_password">使用密码</string>
